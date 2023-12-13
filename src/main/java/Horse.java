@@ -1,5 +1,10 @@
+import lombok.Getter;
+import lombok.ToString;
+
 import static java.util.Objects.isNull;
 
+@ToString
+@Getter
 public class Horse {
 
     private final String name;
@@ -26,18 +31,6 @@ public class Horse {
 
     public Horse(String name, double speed) {
         this(name, speed, 0);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getSpeed() {
-        return speed;
-    }
-
-    public double getDistance() {
-        return distance;
     }
 
     public void move() {
